@@ -1,18 +1,18 @@
 <template>
-  <MainPage />
-</template>
+    <LoginPage />
+  </template>
 
 <script>
 import { defineComponent } from 'vue';
 
 // Components
-import MainPage from '../components/MainPage.vue';
+import LoginPage from '@/components/LoginPage.vue';
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'LoginPage',
 
   components: {
-    MainPage
+    LoginPage
   },
 });
 </script>

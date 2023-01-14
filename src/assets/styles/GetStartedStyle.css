@@ -1,0 +1,39 @@
+
+  .get-started-page .get-started {
+    background: #E5E5E5;  
+}
+
+.h1 {
+    position: absolute;
+    width: 268px;
+    height: 82px;
+    left: 454px;
+    top: 239px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    
+    color: #5E5E5E;
+}
+
+.h2 {
+    position: absolute;
+width: 397px;
+height: 29px;
+left: 389px;
+top: 321px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #5E5E5E;
+}
+
