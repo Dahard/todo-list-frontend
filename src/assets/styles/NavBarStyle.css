@@ -1,0 +1,18 @@
+#neubar {
+    background: #ffffff;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+  }
+   
+  .nav-item .active {
+    text-decoration-color: #ffffff;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #18dad7, #0bb0ad);
+  }
+  #neubar .nav-item {
+    margin : auto 4px;
+  }
+  #neubar a {
+   
+    padding-left:12px;
+    padding-right:12px;
+  }

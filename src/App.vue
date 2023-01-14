@@ -1,18 +1,30 @@
 <template>
+	<NavBar :user="user"/>
   <v-app>
     <v-main>
-      <router-view/>
+      <router-view :user="user"/>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import NavBar from './components/NavBar.vue';
+import axios from 'axios';
 
 export default {
-  name: 'App',
+    name: "App",
+    data: () => ({
+      user: null
+    }),
+    components: { 
+      NavBar 
+    },
 
-  data: () => ({
-    //
-  }),
+    async created() {
+        const response = await axios.get('/api/User/GetUserDetails');
+        
+        this.user = response.data;
+    
+    },
 }
 </script>

@@ -6,6 +6,9 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import './assets/styles/LoginPageStyle.css';
 import './assets/styles/MainPageStyle.css';
+import './assets/styles/GetStartedStyle.css';
+import './assets/styles/NavBarStyle.css';
+import "./axios.js";
 
 
 
