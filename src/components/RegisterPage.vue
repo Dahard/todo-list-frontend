@@ -48,7 +48,7 @@ export default {
 
             };
 
-            axios.post('//localhost:5163/api/Authentication/register', data)
+            axios.post('http://localhost:8000/api/Authentication/register', data)
                 .then(
                     response => {
                         console.log(response)

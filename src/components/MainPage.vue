@@ -57,17 +57,9 @@
                         </v-list-item-group>
                     </v-list>
 
-                    <v-btn color="deep-purple lighten-2" text @click="removeAllToDos()">
-                        Wyczyść listę
+                    <v-btn color="deep-purple lighten-2" text @click="removeArchivedToDos()">
+                        Wyczyść archiwum
                     </v-btn>
-
-                    <v-card-actions>
-                        <v-text-field placeholder="Dodaj coś nowego" id="input" name="input" v-model="newToDo.thingToDo"
-                            clearable rounded></v-text-field>
-                        <v-btn color="deep-purple lighten-2" text @click="addToDo()">
-                            Dodaj
-                        </v-btn>
-                    </v-card-actions>
                 </v-card>
             </v-col>
         </v-row>
@@ -99,8 +91,16 @@ export default {
             }
         },
         removeAllToDos: function () {
+            console.log("Todos before wiping" + this.todos);
             this.archivedTodos.push(this.todos);
             this.todos = [];
+            console.log("Todos after wiping" + this.todos);
+        },
+
+        removeArchivedToDos: function () {
+            console.log("Archived before wiping" + this.archivedTodos);
+            this.archivedTodos = [];
+            console.log("Archived after wiping" + this.archivedTodos);
         }
     }
 }
